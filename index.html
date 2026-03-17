@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Luck Tuitions</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body {font-family:'Poppins',sans-serif;margin:0;background:#f4f6fb;}
+header {background:#004aad;color:#fff;text-align:center;padding:20px;}
+nav {background:#002f6c;padding:10px;text-align:center;}
+nav a {color:white;margin:0 15px;text-decoration:none;font-weight:600;}
+.hero {background:linear-gradient(90deg,#004aad,#00aaff);color:white;text-align:center;padding:70px 20px;}
+.section {padding:40px 20px;text-align:center;}
+.cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.card {background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+.button {background:#ffcc00;padding:12px 25px;border-radius:6px;text-decoration:none;color:black;font-weight:bold;}
+form {max-width:400px;margin:auto;text-align:left;}
+input, select {width:100%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;}
+footer {background:#002f6c;color:white;text-align:center;padding:15px;margin-top:20px;}
+.whatsapp {position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:12px 18px;border-radius:50px;text-decoration:none;font-weight:bold;}
+</style>
+</head>
+<body><header>
+<h1>GOOD LUCK TUITIONS</h1>
+<p>Strong Foundation | Bright Future</p>
+</header><nav>
+<a href="#">Home</a>
+<a href="#courses">Courses</a>
+<a href="#features">Features</a>
+<a href="#admission">Admission</a>
+</nav><section class="hero">
+<h2>1st to 10th (CBSE | SSC | ICSE)</h2>
+<p>Expert Coaching | Weekly Tests | Personal Attention</p>
+<br>
+<a href="#admission" class="button">Apply Now</a>
+</section><section class="section" id="courses">
+<h2>Courses Offered</h2>
+<div class="cards">
+<div class="card"><h3>1–5 Classes</h3><p>Basics & Foundation</p></div>
+<div class="card"><h3>6–8 Classes</h3><p>Concept Strength</p></div>
+<div class="card"><h3>9–10 Classes</h3><p>Board Preparation</p></div>
+<div class="card"><h3>Pre-School</h3><p>Leon Kid Domalguda</p></div>
+</div>
+</section><section class="section" id="features">
+<h2>Why Choose Us?</h2>
+<div class="cards">
+<div class="card">Experienced Faculty</div>
+<div class="card">Small Batches</div>
+<div class="card">Weekly Exams</div>
+<div class="card">Affordable Fees</div>
+<div class="card">Doubt Sessions</div>
+<div class="card">Result Tracking</div>
+</div>
+</section><section class="section" id="admission">
+<h2>Admission Form</h2>
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Student Name" required>
+<input type="text" placeholder="Class" required>
+<input type="tel" placeholder="Phone Number" required>
+<select required>
+<option value="">Select Board</option>
+<option>CBSE</option>
+<option>SSC</option>
+<option>ICSE</option>
+</select>
+<button class="button" type="submit">Submit</button>
+</form>
+<p id="msg"></p>
+</section><footer>
+<p>Contact: 8688298968 | Domalguda, Hyderabad</p>
+<p>© 2026 Good Luck Tuitions</p>
+</footer><a class="whatsapp" href="https://wa.me/918688298968" target="_blank">Chat</a>
+
+<script>
+function submitForm(e){
+ e.preventDefault();
+ document.getElementById('msg').innerHTML = "✅ Form Submitted! We will contact you soon.";
+}
+</script></body>
+</html>
